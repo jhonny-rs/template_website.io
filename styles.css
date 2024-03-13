@@ -8,9 +8,15 @@
 }
 
 body {
-    background: rgb(255, 209, 0);
-    background: linear-gradient(90deg, rgb(255, 209, 0) 0%, rgb(246, 102, 0) 50%, rgba(255, 29, 0, 1) 100%);
+    background-color: #111;
     color: #ccc;
+}
+
+.dancing-script {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .fa {
@@ -18,16 +24,16 @@ body {
 }
 
 .social:hover {
-    color: #ffd100;
+    color: #b97d40;
 }
 
 /* NAV BAR */
 
 nav {
     width: 100%;
-    height: 10dvh;
-    margin-bottom: 3px;
-    background-color: #111;
+    height: 12dvh;
+    border-bottom: 3px solid #b97d40;
+    background-color: #1B0000;
 }
 
 nav ul {
@@ -40,6 +46,10 @@ nav ul {
 
 nav li {
     list-style: none;
+}
+
+nav img {
+    width: 6em;
 }
 
 #menu {
@@ -63,12 +73,12 @@ a {
     height: 1px;
     bottom: -10px;
     left: 0;
-    background-color: #ffd100;
+    background-color: #b97d40;
     transition: width .3s ease-in-out;
 }
 
 #menu li a:hover {
-    color: #ffd100;
+    color: #b97d40;
     font-weight: bold;
 }
 
@@ -81,7 +91,7 @@ a {
 section {
     width: 100%;
     aspect-ratio: 16/7;
-    background-image: url(uxie.png);
+    background-image: url(sections-background.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -89,7 +99,6 @@ section {
 .sections-display {
     display: flex;
     flex-direction: column;
-    gap: 1px;
 }
 
 .grid {
@@ -111,10 +120,10 @@ section {
 }
 
 .content h2 {
-    color: #ffd100;
+    color: #b97d40;
     text-transform: capitalize;
     text-align: center;
-    font-family: "La Belle Aurore", sans-serif;
+    font-family: "Dancing Script", sans-serif;
     font-size: clamp(24px, 4vw, 64px);
 }
 
@@ -147,13 +156,13 @@ section {
 /* FOOTER */
 
 footer {
-    background-color: #111;
+    background-color: #1B0000;
     height: 100px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    margin-top: 3px;
+    border-top: 3px solid #b97d40;
 }
 
 footer div {
@@ -180,6 +189,10 @@ footer a {
 
     #menu {
         display: none;
+    }
+    
+    nav {
+        height: 10dvh;
     }
 
     nav ul {
